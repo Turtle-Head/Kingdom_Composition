@@ -13,3 +13,13 @@
    - Implement a function `hearAnimalSound()` that takes as argument an `Animal` object owned by the `PetOwner`. The function should call the `makeSound()` function of the given `Animal` object, thereby printing the sound made by the `Animal` (10 points).
 
 **Instructions**: In both parts of the assignment, create a main function to instantiate objects of your classes and demonstrate their functionalities. Pay close attention to principles of OOP, such as encapsulation. For Part 1, utilize inheritance, while for Part 2, focus on composition.
+**Marking Scheme**:
+
+- Animal base class implementation: 10 points
+- Dog and Cat classes implementation: 40 points
+- Animal class implementation in composition: 10 points
+- PetOwner class implementation: 40 points
+
+Total: 100 points
+
+This assignment will help you understand the differences between inheritance and composition, and when to use each. Happy coding!
