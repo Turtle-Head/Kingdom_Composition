@@ -9,9 +9,9 @@ void Animal::makeSound()
 	std::cout << "\n " << this->name << " says " << this->sound << std::endl;
 }
 
-void Animal::getName()
+std::string Animal::getName(Animal arg)
 {
-	std::cout << "\n " << this->name << " \n";
+	return arg.name;
 }
 
 void Animal::setName()
@@ -39,8 +39,23 @@ void Animal::setRace()
 	this->race = race;
 }
 
-void Animal::getRace()
+bool Animal::isDog(Animal arg)
 {
-	std::cout << "\n " << this->name << ": is a " << this->age << " year old " << this->race << std::endl;
+	if (this->race == "Dog") {
+		return true;
+	}
+	else return false;
 }
 
+void Animal::playFetchWithDog()
+{
+	if (this->race == "Bulldog") {
+		for (int i = 0; i <= 10; i++) {
+			std::cout << "\n " << this->name << " runs for the ball. \n " << this->name << " catches the ball. \n";
+			std::cout << this->name << " caught the ball " << i << " times\n";
+		}
+		
+	}
+}
+
+											 

@@ -9,12 +9,14 @@ public:
     int age;
     Animal(std::string name, std::string sound, std::string race, int age);
     void makeSound();
-    void getName();
+    std::string getName(Animal arg);
     void setName();
     void setSound();
     int getAge();
     void setAge();
     void setRace();
-    void getRace();
+    bool isDog(Animal arg);
+    void playFetchWithDog();
+
 };
 

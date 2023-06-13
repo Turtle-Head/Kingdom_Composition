@@ -7,15 +7,16 @@
 
 int main()
 {
-    Animal Roxx("Roxy", "Bark! Bark!\n", "Doberman", 5);
-    Animal Dobby("Peter Pan", "Meow", "Manx", 3);
-    PetOwner Guy("Jack Spratt", Roxx);
-    PetOwner Sara("Sara", Dobby);
-    Guy.getPet();
+    Animal Roxx("Roxy", "Bark! Bark!\n", "Dog", 5);
+    Animal Dobby("Peter Pan", "Meow", "Cat", 3);
+    //tOwner Guy("Jack", Roxx, Dobby);
+    PetOwner Sara("Sara", Dobby,Roxx);
+    /*Guy.getPet();
     Guy.talktoPet();
-    Guy.getPetRace();
-    Sara.getPetRace();
+    Guy.getPetRace();*/
     Sara.talktoPet();
+    Sara.playFetchWithDog(Roxx);
+
 }
 
 

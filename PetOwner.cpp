@@ -2,7 +2,7 @@
 #include <iostream>
 #include <string>
 
-PetOwner::PetOwner(std::string name, Animal pet):name(name),pet(pet) {}
+PetOwner::PetOwner(std::string name, Animal pet, Animal pet2):name(name), pet(pet), pet2(pet2) {}
 
 void PetOwner::setName()
 {
@@ -11,33 +11,50 @@ void PetOwner::setName()
 
 void PetOwner::getName()
 {
-	std::cout << name << std::endl;
+	std::cout << name;
 }
 
-void PetOwner::setPet(Animal pet)
+void PetOwner::setPet(Animal arr)
 {
-	this->pet = pet;
+	this->pet = arr;
 }
 
-void PetOwner::getPet()
-{
-	this->pet.getName();
-
-}
+//void PetOwner::getPet()
+//{
+//	this->pet.getName();
+//
+//}
 
 void PetOwner::talktoPet()
 {
 	this->pet.makeSound();
-}
-
-void PetOwner::getPetRace()
-{
-	this->pet.getRace();
+	this->pet2.makeSound();
 }
 
 void PetOwner::getPetAge()
 {
 	std::cout << this->pet.getAge() << "years old\n";
+	std::cout << this->pet2.getAge() << "years old\n";
+}
+void PetOwner::playFetchWithDog(Animal arg)
+{
+	if (arg.isDog(arg) == true) {
+		
+		for (int i = 0; i <= 3500; i++) {
+			totalFetches++;
+			std::cout << totalFetches << arg.getName(arg) << " fetches for "<< totalFetches << arg.getName(arg) << std::endl;
+
+			if (totalFetches == 20) {
+				std::cout << "\nWoah, that's a lot of activity! It's time for a break.\n";
+				totalFetches = 0;
+				break;
+			}
+		}
+	}
 }
 
 
+void hearAnimalSound(Animal arg)
+{
+	arg.makeSound();
+}

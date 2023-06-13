@@ -6,17 +6,18 @@ class PetOwner
 {
 private:
 	std::string name;
-	Animal pet;
+	Animal pet,pet2;
 public:
-	PetOwner(std::string name, Animal pet);
+	int totalFetches = 0;
+	PetOwner(std::string name, Animal pet, Animal pet2);
 	void setName();
 	void getName();
-	void setPet(Animal pet);
-	void getPet();
+	void setPet(Animal arr);
+	//void getPet();
 	void talktoPet();
-	void getPetRace();
 	void getPetAge();
-
+	void playFetchWithDog(Animal arg);
+	void hearAnimalSound(Animal arg);
 };
 
 
