@@ -1,3 +1,4 @@
+// Author::James Fehr
 #pragma once
 #include <string>
 #include <iostream>
@@ -16,7 +17,6 @@ public:
     void setAge();
     void setRace();
     bool isDog(Animal arg);
-    void playFetchWithDog();
 
 };
 

@@ -1,3 +1,4 @@
+// Author::James Fehr
 #include "Animal.h"
 #include <iostream>
 
@@ -47,15 +48,7 @@ bool Animal::isDog(Animal arg)
 	else return false;
 }
 
-void Animal::playFetchWithDog()
-{
-	if (this->race == "Bulldog") {
-		for (int i = 0; i <= 10; i++) {
-			std::cout << "\n " << this->name << " runs for the ball. \n " << this->name << " catches the ball. \n";
-			std::cout << this->name << " caught the ball " << i << " times\n";
-		}
-		
-	}
-}
+
+
 
 											 

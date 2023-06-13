@@ -1,3 +1,4 @@
+// Author::James Fehr
 #pragma once
 #include <string>
 #include "Animal.h"
@@ -13,11 +14,10 @@ public:
 	void setName();
 	void getName();
 	void setPet(Animal arr);
-	//void getPet();
 	void talktoPet();
 	void getPetAge();
 	void playFetchWithDog(Animal arg);
-	void hearAnimalSound(Animal arg);
+	void hearAnimalSound();
 };
 
 

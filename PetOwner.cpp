@@ -1,3 +1,4 @@
+// Author::James Fehr
 #include "PetOwner.h"
 #include <iostream>
 #include <string>
@@ -19,23 +20,12 @@ void PetOwner::setPet(Animal arr)
 	this->pet = arr;
 }
 
-//void PetOwner::getPet()
-//{
-//	this->pet.getName();
-//
-//}
-
-void PetOwner::talktoPet()
-{
-	this->pet.makeSound();
-	this->pet2.makeSound();
-}
-
 void PetOwner::getPetAge()
 {
 	std::cout << this->pet.getAge() << "years old\n";
 	std::cout << this->pet2.getAge() << "years old\n";
 }
+
 void PetOwner::playFetchWithDog(Animal arg)
 {
 	if (arg.isDog(arg) == true) {
@@ -54,7 +44,8 @@ void PetOwner::playFetchWithDog(Animal arg)
 }
 
 
-void hearAnimalSound(Animal arg)
+void PetOwner::hearAnimalSound()
 {
-	arg.makeSound();
+	this->pet.makeSound();
+	this->pet2.makeSound();
 }
